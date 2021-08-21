@@ -29,20 +29,20 @@
                 </div>
                 <div>
                     <h5>Memory</h5>
-                    <button type="button" class="btn btn-outline-secondary">8GB Unified Memory</button>
-                    <button type="button" class="btn btn-outline-secondary">16GB Unified Memory</button>
+                    <button id="memory-slecetion-first" type="button" class="btn btn-outline-secondary">8GB Unified Memory</button>
+                    <button id="memory-slecetion-second" type="button" class="btn btn-outline-secondary">16GB Unified Memory</button>
                 </div>
                 <div class="mt-3">
                     <h5>Storage</h5>
-                    <button type="button" class="btn btn-outline-secondary">256GB SSD Storage</button>
-                    <button type="button" class="btn btn-outline-secondary">512GB SSD Storage</button>
-                    <button type="button" class="btn btn-outline-secondary">1TB SSD Storage</button>
+                    <button id="storage-selection-first" type="button" class="btn btn-outline-secondary">256GB SSD Storage</button>
+                    <button id="storage-selection-second" type="button" class="btn btn-outline-secondary">512GB SSD Storage</button>
+                    <button id="storage-selection-third" type="button" class="btn btn-outline-secondary">1TB SSD Storage</button>
                 </div>
                 <div class="mt-3">
-                    <h5>Chose Your Delivery Option</h5>
-                    <button type="button" class="btn btn-outline-secondary">Friday,August 25 Free Prime
+                    <h5>Choose Your Delivery Option</h5>
+                    <button id="delivery-selection-first" type="button" class="btn btn-outline-secondary">Friday,August 25 Free Prime
                         Delivery</button>
-                    <button type="button" class="btn btn-outline-secondary">Monday,August 21 Delivery Charge
+                    <button id="delivery-selection-second" type="button" class="btn btn-outline-secondary">Monday,August 21 Delivery Charge
                         $20</button>
                 </div>
                 <div class="container mt-5">
@@ -50,19 +50,19 @@
                         <div class="col">
                             <h6>Base Price</h6>
                             <h6>Extra Memory Cost</h6>
-                            <h6>Extra Strogae Cost</h6>
+                            <h6>Extra Storage Cost</h6>
                             <h6>Delivery Charge</h6>
                             <hr class="w-100">
                             <h6>Total Price</h6>
                             <h6></h6>
                         </div>
                         <div class="col">
-                            <h6>$1299</h6>
-                            <h6>$0</h6>
-                            <h6>$0</h6>
-                            <h6>$0</h6>
+                            <h6>$<span id="base-cost">1299</span></h6>
+                            <h6>$<span id="memory-cost">0</span></h6>
+                            <h6>$<span id="storage-cost">0</span></h6>
+                            <h6>$<span id="delivery-cost">0</span></h6>
                             <hr>
-                            <h6>$1299</h6>
+                            <h6>$<span id="total-price">1299</span></h6>
                         </div>
                     </div>
                 </div>
@@ -75,12 +75,13 @@
         </div>
         <hr>
         <footer>
-            <h2 class="text-center">Total:$1299</h2>
+            <h2 class="text-center">Total:$<span id="updated-total-cost">1299</span></h2>
         </footer>
     </section>
 
-
-
+    // Js File
+    <script src="js/app.js"></script>
+    
     <!-- Script Style -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
