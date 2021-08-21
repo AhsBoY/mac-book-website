@@ -18,7 +18,8 @@ function calculation (){
     const storageCost = getTotal("storage") 
     const deliveryCost = getTotal("delivery") 
     const totalCost = basePrice + memoryCost + storageCost + deliveryCost;
-    document.getElementById("total-price").innerText = totalCost
+    document.getElementById("total-price").innerText = totalCost;
+    totalPrice.innerText = totalCost;
 }
 // Verifying Promo Code
 function promoCode(){
